@@ -8,6 +8,10 @@ if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
+# Java
+# ------
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 # Editors.
 # --------
 export EDITOR='/usr/bin/vi'
