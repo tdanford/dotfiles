@@ -15,7 +15,7 @@ autoload -U colors && colors
 # Load and execute the prompt theming system.
 fpath=("$curr/terminal" $fpath)
 autoload -Uz promptinit && promptinit
-prompt 'paulmillr'
+prompt 'tdanford'
 
 # ==================================================================
 # = Aliases =
@@ -80,6 +80,9 @@ alias gs='git status --short'
 alias gd='git diff'
 alias gds='git diff --staged'
 alias gdisc='git discard'
+
+alias gitlog='git log --oneline --graph --decorate=short'
+alias gitlogall='git log --oneline --graph --decorate=short --all'
 
 function gc() {
   args=$@
