@@ -12,10 +12,16 @@ source "$curr/terminal/highlight.sh"
 
 autoload -U colors && colors
 
+# Added in this oh-my-zsh stuff.
+plugins=(git)
+ZSH=$HOME/.oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
 # Load and execute the prompt theming system.
 fpath=("$curr/terminal" $fpath)
 autoload -Uz promptinit && promptinit
 prompt 'paulmillr'
+
 
 # ==================================================================
 # = Aliases =
