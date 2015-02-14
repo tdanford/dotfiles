@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dev="$HOME/Developer"
+dev="$HOME/Development"
 dotfiles="$dev/tdanford/dotfiles"
 
 if [[ -d "$dotfiles" ]]; then
