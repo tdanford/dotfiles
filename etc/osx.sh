@@ -34,13 +34,13 @@ defaults write com.apple.screencapture location "$HOME/Downloads/"
 # ===========================================================
 
 # Trackpad: enable tap to click for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+#defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#sudo defaults write com.apple.AppleMultitouchTrackpad Clicking 1
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+#defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 
 # Disable auto-correct
 # defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -156,8 +156,8 @@ sudo mdutil -E / > /dev/null
 # Use a modified version of the Pro theme by default in Terminal.app
 # open "$pm/dotfiles/terminal/paulmillr.terminal"
 # sleep 1 # Wait a bit to make sure the theme is loaded
-# defaults write com.apple.terminal 'Default Window Settings' -string 'paulmillr'
-# defaults write com.apple.terminal 'Startup Window Settings' -string 'paulmillr'
+# defaults write com.apple.terminal 'Default Window Settings' -string 'tdanford'
+# defaults write com.apple.terminal 'Startup Window Settings' -string 'tdanford'
 
 # Transmission
 # ============
