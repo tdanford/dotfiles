@@ -89,6 +89,7 @@ alias gdisc='git discard'
 
 alias gitlog='git log --oneline --graph --decorate=short'
 alias gitlogall='git log --oneline --graph --decorate=short --all'
+gitdiff() { git diff $1~1 $1 }
 alias pud='pushd' 
 alias pod='popd'
 
