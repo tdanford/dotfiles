@@ -10,7 +10,12 @@ fi
 
 # Java
 # ------
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME='/usr/lib/jvm/java-8-oracle'
+export JAVA_OPTS="-Xmx6g" 
+
+# Gradle
+# -----
+export GRADLE_OPTS="-Xmx8g" 
 
 # Editors.
 # --------
@@ -94,6 +99,8 @@ path=(
   /usr/local/share/npm/bin
   /usr/{bin,sbin}
   /{bin,sbin}
+  /home/tdanford/.local/bin
+  /usr/lib/postgresql/9.4/bin
   $path
 )
 
